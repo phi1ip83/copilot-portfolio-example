@@ -273,4 +273,54 @@ article section.skills ul li:nth-child(5)::before {
     }
 }
 
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding inside form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px; /* Space below label */
+    font-weight: bold; /* Bold label text */
+}
+
+form input, form textarea {
+    padding: 10px; /* Padding inside input and textarea */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    font-family: Arial, Helvetica, sans-serif; /* Consistent font choice */
+    font-size: 1rem; /* Base font size */
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+form button {
+    align-self: flex-start; /* Align button to the start */
+    padding: 10px 20px; /* Add padding */
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+form button:hover, form button:focus {
+    background-color: #0056b3; /* Darker blue on hover/focus */
+}
+
 /* ...existing code... */
