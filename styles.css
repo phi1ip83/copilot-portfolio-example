@@ -1,0 +1,276 @@
+/* ...existing code... */
+
+body {
+    background-color: #333333; /* Dark grey background */
+    color: #000000; /* Black text */
+    font-family: Arial, Helvetica, sans-serif; /* Readable and widely supported font */
+    font-size: 16px; /* Base font size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+}
+
+.container {
+    background-color: #ffffff; /* White background */
+    max-width: 1200px; /* Max width */
+    width: 100%; /* Full width */
+    padding: 20px; /* Padding inside container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header, nav, article, section, footer {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #212529; /* Dark grey text */
+    font-family: Arial, Helvetica, sans-serif; /* Consistent font choice */
+    margin: 20px; /* Add margin */
+    padding: 20px; /* Add padding */
+    text-align: center; /* Center text */
+}
+
+a {
+    color: #000000; /* Black text */
+    font-family: Arial, Helvetica, sans-serif; /* Consistent font choice */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding */
+    margin: 0 10px; /* Add margin */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+a:hover, a:focus {
+    color: #ffffff; /* White text on hover/focus */
+    background-color: #0056b3; /* Darker blue background on hover/focus */
+}
+
+button {
+    background-color: #007bff; /* Blue button */
+    color: #ffffff; /* White text */
+    font-family: Arial, Helvetica, sans-serif; /* Consistent font choice */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+}
+
+button:hover, button:focus {
+    background-color: #0056b3; /* Darker blue on hover/focus */
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+    header, nav, article, section, footer {
+        margin: 15px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 14px;
+    }
+    header, nav, article, section, footer {
+        margin: 10px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 13px;
+    }
+    header, nav, article, section, footer {
+        margin: 5px;
+        padding: 5px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+    header, nav, article, section, footer {
+        margin: 2px;
+        padding: 2px;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* About Me section styles */
+article {
+    text-align: left; /* Align text to the left */
+    font-size: 1rem; /* Base font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Space below the article */
+}
+
+article h2 {
+    font-size: 2rem; /* Larger font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+article p {
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+article section {
+    margin-bottom: 20px; /* Space below each section */
+}
+
+article section h3 {
+    font-size: 1.5rem; /* Larger font size for section headings */
+    margin-bottom: 10px; /* Space below the section heading */
+}
+
+article section ul {
+    padding-left: 20px; /* Indent the list */
+}
+
+article section ul li {
+    margin-bottom: 10px; /* Space below each list item */
+}
+
+/* Projects section card layout */
+article section.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+}
+
+article section.projects ul {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 20px); /* Three cards per row */
+    background-color: #ffffff; /* White background for cards */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+article section.projects ul li {
+    margin-bottom: 10px; /* Space below each list item */
+}
+
+/* Responsive adjustments for card layout */
+@media (max-width: 992px) {
+    article section.projects ul {
+        flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 576px) {
+    article section.projects ul {
+        flex: 1 1 100%; /* One card per row */
+    }
+}
+
+/* Skills list with icons */
+article section.skills ul {
+    list-style: none; /* Remove default list style */
+    padding-left: 0; /* Remove default padding */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between skill items */
+    justify-content: center; /* Center the skill items */
+}
+
+article section.skills ul li {
+    position: relative; /* Position relative for pseudo-element */
+    padding-left: 25px; /* Space for the icon */
+    margin-bottom: 10px; /* Space below each list item */
+    background-color: #e9ecef; /* Light grey background for skill items */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside skill items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+}
+
+article section.skills ul li:hover {
+    transform: translateY(-5px); /* Lift the skill item on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+article section.skills ul li::before {
+    content: ''; /* Empty content for the icon */
+    position: absolute; /* Position absolute for the icon */
+    left: 10px; /* Align icon to the left */
+    top: 50%; /* Center icon vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    width: 16px; /* Icon width */
+    height: 16px; /* Icon height */
+    background-size: contain; /* Ensure icon fits */
+    background-repeat: no-repeat; /* No repeat for the icon */
+}
+
+article section.skills ul li:nth-child(1)::before {
+    background-image: url('icons/html-icon.png'); /* HTML icon */
+}
+
+article section.skills ul li:nth-child(2)::before {
+    background-image: url('icons/css-icon.png'); /* CSS icon */
+}
+
+article section.skills ul li:nth-child(3)::before {
+    background-image: url('icons/js-icon.png'); /* JavaScript icon */
+}
+
+article section.skills ul li:nth-child(4)::before {
+    background-image: url('icons/react-icon.png'); /* React icon */
+}
+
+article section.skills ul li:nth-child(5)::before {
+    background-image: url('icons/node-icon.png'); /* Node.js icon */
+}
+
+/* Navigation menu and hamburger icon styles */
+#hamburger {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide by default */
+}
+
+#nav-menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+#nav-menu.visible {
+    display: block; /* Show when visible class is added */
+}
+
+@media (max-width: 768px) {
+    #hamburger {
+        display: block; /* Show hamburger icon on small screens */
+    }
+
+    #nav-menu {
+        display: none; /* Hide menu by default on small screens */
+        flex-direction: column;
+    }
+
+    #nav-menu.visible {
+        display: flex; /* Show menu when visible class is added */
+    }
+}
+
+/* ...existing code... */

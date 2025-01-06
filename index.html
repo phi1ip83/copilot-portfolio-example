@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Development Portfolio</title>
+    <meta name="description" content="Welcome to my web development portfolio. Explore my projects, skills, and contact me for collaboration.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to My Website</h1>
+            <nav aria-label="Main navigation" role="navigation">
+                <button id="hamburger" aria-label="Toggle navigation menu">
+                    &#9776; <!-- Hamburger icon -->
+                </button>
+                <ul id="nav-menu">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <article>
+            <h2 id="about-me">About Me</h2>
+            <p>Hi, I'm a web developer with a passion for creating interactive and dynamic websites. I love hiking, reading science fiction novels, and experimenting with new recipes in the kitchen. In my free time, I also enjoy playing the guitar and exploring new technologies.</p>
+            <section id="projects" class="projects">
+                <h3>Projects</h3>
+                <ul>
+                    <li>Project One: A dynamic website for a local business.</li>
+                    <li>Project Two: An interactive portfolio showcasing my work.</li>
+                    <li>Project Three: A recipe app with user authentication and recipe sharing features.</li>
+                </ul>
+                <figure>
+                    <img src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Ffastercourse.com%2Fwp-content%2Fuploads%2F2019%2F07%2FLB_Project_Code_example.png&sp=1736144865Ta85ebd13acc432d4969604149c82b380a03951ec0c5a8d201bd5f49346b7d2d7" alt="Screenshot of a dynamic website project showing a responsive layout and interactive elements">
+                    <figcaption>Screenshot of one of my projects.</figcaption>
+                </figure>
+            </section>
+            <section id="skills" class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                </ul>
+            </section>
+        </article>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required aria-required="true">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer role="footer">
+            <p>&copy; 2023 My Website</p>
+        </footer>
+    </div>
+</body>
+</html>
